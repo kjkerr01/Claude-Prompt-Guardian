@@ -7,4 +7,6 @@ Go to chrome://extensions/ (or the extension page of whatever browser you use)\
 Turn on developer mode\
 Select load unpacked\
 Select your folder with the files\
-Wait for it to load, and then go to Claude and test it out (your responses may take longer than normal)
+Click on the extension icon (a gray square with a C)
+Add your Google API key (you can get one for free from https://aistudio.google.com/app/api-keys)
+Go to Claude and test it out
