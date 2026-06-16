@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 320px;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+    }
+    h3 {
+      margin-top: 0;
+      color: #111827;
+      font-size: 16px;
+    }
+    label {
+      font-size: 13px;
+      font-weight: 600;
+      color: #374151;
+      display: block;
+      margin-bottom: 6px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      box-sizing: border-box;
+      margin-bottom: 12px;
+      font-family: monospace;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #d97757; /* Claude-ish color */
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #c26547;
+    }
+    #status {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #059669;
+      text-align: center;
+      min-height: 15px;
+    }
+    .help-text {
+      font-size: 11px;
+      color: #6b7280;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Claude Guardian</h3>
+  <label for="apiKey">Google AI Studio API Key:</label>
+  <input type="password" id="apiKey" placeholder="AIzaSy...">
+  
+  <div class="help-text">
+    Get a free API key from <br><a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>.
+  </div>
+
+  <button id="saveBtn">Save API Key</button>
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
