@@ -8,5 +8,5 @@ Turn on developer mode\
 Select load unpacked\
 Select your folder with the files\
 Click on the extension icon (a gray square with a C)\
-Add your Google API key (you can get one for free from https://aistudio.google.com/app/api-keys)\
+Add your Google API key (you can get one for free from https://aistudio.google.com/app/api-keys) \
 Go to Claude and test it out
