@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Age-Gate Guardian",
+  "version": "1.0",
+  "description": "Intercepts Claude prompts and checks them with Gemma before sending.",
+  "permissions": ["scripting"],
+  "host_permissions": [
+  "*://claude.ai/*",
+  "*://generativelanguage.googleapis.com/*"
+],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://claude.ai/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["interceptor.js"],
+      "matches": ["*://claude.ai/*"]
+    }
+  ]
+}
